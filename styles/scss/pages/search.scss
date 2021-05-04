@@ -1,0 +1,68 @@
+@import "../styles.scss";
+
+header {
+  @include simple-flex(space-between, center, row);
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 44px;
+  background-color: $background-secondary;
+  padding: 10px 10px;
+  box-sizing: border-box;
+
+  .top {
+    @include simple-flex(space-evenly);
+    align-items: center;
+    .top-icon {
+      margin-left: 10px;
+    }
+  }
+
+  .input-style {
+    color: blanchedalmond;
+    font-size: 1.4rem;
+    width: 326px;
+    height: 36px;
+    margin: 6px 0;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: $background-primary;
+    color: $text-color;
+  }
+
+  .buttons {
+    gap: 6px;
+    display: flex;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    button {
+      background: white;
+      border: 1px solid #ccc;
+      padding: 2px 8px;
+      border-radius: 5px;
+      outline: none;
+      min-width: 65px;
+    }
+  }
+}
+
+.photos {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap row;
+  gap: 1px;
+  img {
+    width: 124px;
+  }
+}
+
+.action-icon {
+  width: 24px;
+  height: auto;
+  cursor: pointer;
+  padding: 10px 10px;
+}

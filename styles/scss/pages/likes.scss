@@ -1,0 +1,45 @@
+@import "../styles.scss";
+
+header {
+  @include simple-flex(space-between, center, column);
+  width: 100%;
+  min-height: 44px;
+  background-color: $background-secondary;
+  padding: 10px 10px;
+  box-sizing: border-box;
+
+  .options {
+    font-size: 1.6rem;
+  }
+  .you {
+    font-weight: 600px;
+    border-bottom: 5px #000;
+  }
+}
+.info {
+  @include simple-flex;
+  .followers {
+    font-size: 1.5rem;
+  }
+}
+.page-content {
+  @include simple-flex();
+  flex-wrap: wrap;
+}
+.time {
+  width: 100%;
+  height: 46px;
+}
+.event {
+  width: 100%;
+  height: 60px;
+}
+button {
+  width: 90px;
+  height: 28px;
+  background-color: #ffff;
+  border: 1px solid;
+  border-radius: 5px;
+  color: rgba(60, 60, 67, 0.18);
+  margin-top: 30px;
+}
