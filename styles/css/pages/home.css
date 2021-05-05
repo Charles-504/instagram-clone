@@ -7,7 +7,6 @@ html,
 body {
   height: 100%;
   width: 100%;
-  max-width: 375px;
 }
 
 * {
@@ -161,12 +160,24 @@ main .page-container .feed-container .card-post .card-header .author-img {
   border-radius: 50%;
   background-size: cover;
 }
-main .page-container .feed-container .card-post .card-header .author-infos .author-name {
+main
+  .page-container
+  .feed-container
+  .card-post
+  .card-header
+  .author-infos
+  .author-name {
   font-weight: 600;
   font-size: 1.3rem;
   margin-bottom: 1.5px;
 }
-main .page-container .feed-container .card-post .card-header .author-infos .author-location {
+main
+  .page-container
+  .feed-container
+  .card-post
+  .card-header
+  .author-infos
+  .author-location {
   font-size: 1.1rem;
 }
 main .page-container .feed-container .card-post .card-header .more-icon {
@@ -186,12 +197,24 @@ main .page-container .feed-container .card-post .post-infos .post-actions {
   display: flex;
   gap: 15px;
 }
-main .page-container .feed-container .card-post .post-infos .post-actions .action-icon {
+main
+  .page-container
+  .feed-container
+  .card-post
+  .post-infos
+  .post-actions
+  .action-icon {
   height: 20px;
   width: auto;
   cursor: pointer;
 }
-main .page-container .feed-container .card-post .post-infos .post-actions .action-icon:last-child {
+main
+  .page-container
+  .feed-container
+  .card-post
+  .post-infos
+  .post-actions
+  .action-icon:last-child {
   margin-left: auto;
 }
 main .page-container .feed-container .card-post .post-infos .likes-info {
@@ -199,14 +222,26 @@ main .page-container .feed-container .card-post .post-infos .likes-info {
   align-items: center;
   padding: 12px 0 5px;
 }
-main .page-container .feed-container .card-post .post-infos .likes-info .people-like-img {
+main
+  .page-container
+  .feed-container
+  .card-post
+  .post-infos
+  .likes-info
+  .people-like-img {
   width: 17px;
   height: 17px;
   border-radius: 50%;
   background-size: cover;
   margin-right: 6.5px;
 }
-main .page-container .feed-container .card-post .post-infos .likes-info .likes-quantity {
+main
+  .page-container
+  .feed-container
+  .card-post
+  .post-infos
+  .likes-info
+  .likes-quantity {
   font-size: 1.3rem;
 }
 main .page-container .feed-container .card-post .post-infos .post-caption {
@@ -285,7 +320,11 @@ main .aside-container .suggestions-container .suggestion .follow-action {
 main .aside-container .suggestions-container .suggestion .suggestion-name {
   font-size: 1.4rem;
 }
-main .aside-container .suggestions-container .suggestion .suggestion-common-followers {
+main
+  .aside-container
+  .suggestions-container
+  .suggestion
+  .suggestion-common-followers {
   color: #8e8e8e;
   font-size: 1.2rem;
 }
