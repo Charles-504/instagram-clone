@@ -1,5 +1,10 @@
 @import "../styles.scss";
 
+body {
+  @media (min-width: $breakpoint-tablet) {
+    background-color: $background-secondary;
+  }
+}
 header {
   @include simple-flex(center, center, row);
   width: 100%;
@@ -7,6 +12,11 @@ header {
   background-color: $background-secondary;
   padding: 30px 15px 20px;
   box-sizing: border-box;
+
+  @media (min-width: $breakpoint-tablet) {
+    background-color: $background-secondary;
+    display: none;
+  }
 
   .user-tag {
     margin-left: 144px;
@@ -22,16 +32,84 @@ header {
     margin-left: auto;
   }
 }
+.header2 {
+  @include simple-flex(space-between, center, row);
+  width: 100%;
+  min-height: 50px;
+  background-color: $background-primary;
+  position: sticky;
+  bottom: 0;
+  padding: 0 26px;
+  box-sizing: border-box;
+  .input-style {
+    color: blanchedalmond;
+    font-size: 1.4rem;
+    width: 326px;
+    height: 36px;
+    margin: 6px 0;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: $background-primary;
+    color: $text-color;
+  }
+  @media (max-width: $breakpoint-tablet) {
+    display: none;
+  }
+}
 
 .user-container {
   @include simple-flex(space-evenly, flex-start, row);
   flex-wrap: wrap;
   text-align: center;
   background-color: $background-secondary;
-  .uvalues {
-    display: flex;
-    text-align: center;
+  padding-top: 50px;
+
+  @media (min-width: $breakpoint-tablet) {
     background-color: $background-secondary;
+    @include simple-flex(flex-start, flex-start, row);
+    flex-wrap: wrap;
+  }
+  .user-pc {
+    @include simple-flex(center, baseline, column);
+    @media (max-width: $breakpoint-tablet) {
+      display: none;
+    }
+  }
+  .user2 {
+    font-size: 2.5rem;
+    @media (max-width: $breakpoint-tablet) {
+      background-color: $background-secondary;
+      display: none;
+    }
+    .button2 {
+      @media (max-width: $breakpoint-tablet) {
+        width: 70px;
+        height: 18px;
+        background-color: #ffff;
+        border: 1px solid #3c3c43;
+        border-radius: 5px;
+        color: #000;
+        font-size: 1.3rem;
+        outline: none;
+      }
+    }
+    .uvalues {
+      display: flex;
+      text-align: center;
+      background-color: $background-secondary;
+      @media (max-width: $breakpoint-tablet) {
+        @include simple-flex(flex-start, flex-start, row);
+        flex-wrap: wrap;
+        word-break: keep-all;
+      }
+    }
+    .description2 {
+      @media (min-width: $breakpoint-tablet) {
+        display: none;
+      }
+    }
   }
   span {
     margin: 0px 25px;
@@ -48,6 +126,11 @@ header {
   background: linear-gradient(215deg, blue 10%, #fd1d1d, #fcb045);
   position: relative;
   margin-bottom: 5px;
+  @media (min-width: $breakpoint-tablet) {
+    margin: 70px 70px;
+    width: 70px;
+    height: 70px;
+  }
 
   .spin {
     width: 64px;
@@ -72,10 +155,19 @@ header {
 }
 h1 {
   background-color: $background-secondary;
+  @media (min-width: $breakpoint-tablet) {
+    display: none;
+  }
 }
-p {
+.description {
   background-color: $background-secondary;
-  font-size: 1.2rem;
+  @media (min-width: $breakpoint-tablet) {
+    display: none;
+  }
+  p {
+    background-color: $background-secondary;
+    font-size: 1.2rem;
+  }
 }
 .atsign {
   color: $highlight-color;
@@ -88,8 +180,7 @@ p {
   @include simple-flex(center, center, row);
   flex-wrap: wrap;
   background-color: $background-secondary;
-
-  button {
+  .button1 {
     width: 100%;
     height: 44px;
     background-color: #ffff;
@@ -100,6 +191,10 @@ p {
     margin-bottom: 10px;
     font-size: 1.3rem;
     outline: none;
+    @media (min-width: $breakpoint-tablet) {
+      background-color: $background-secondary;
+      display: none;
+    }
   }
 }
 .about-user {

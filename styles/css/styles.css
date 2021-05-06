@@ -7,7 +7,6 @@ html,
 body {
   height: 100%;
   width: 100%;
-  max-width: 375px;
 }
 
 * {
@@ -34,6 +33,7 @@ html {
 @media (min-width: 768px) {
   .tab-bar {
     background-color: #fafafa;
+    display: none;
   }
 }
 

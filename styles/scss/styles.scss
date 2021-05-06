@@ -22,5 +22,6 @@ html {
 
   @media (min-width: $breakpoint-tablet) {
     background-color: $background-primary;
+    display: none;
   }
 }
