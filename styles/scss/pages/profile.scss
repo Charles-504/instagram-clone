@@ -65,58 +65,32 @@ header {
   text-align: center;
   background-color: $background-secondary;
   padding-top: 50px;
-
-  @media (min-width: $breakpoint-tablet) {
-    background-color: $background-secondary;
-    @include simple-flex(flex-start, flex-start, row);
-    flex-wrap: wrap;
-  }
-  .user-pc {
-    @include simple-flex(center, baseline, column);
+  .val2 {
+    @include simple-flex();
     @media (max-width: $breakpoint-tablet) {
       display: none;
     }
-  }
-  .user2 {
-    font-size: 2.5rem;
-    @media (max-width: $breakpoint-tablet) {
-      background-color: $background-secondary;
-      display: none;
-    }
-    .button2 {
-      @media (max-width: $breakpoint-tablet) {
-        width: 70px;
-        height: 18px;
-        background-color: #ffff;
-        border: 1px solid #3c3c43;
-        border-radius: 5px;
-        color: #000;
-        font-size: 1.3rem;
-        outline: none;
-      }
-    }
-    .uvalues {
-      display: flex;
-      text-align: center;
-      background-color: $background-secondary;
-      @media (max-width: $breakpoint-tablet) {
-        @include simple-flex(flex-start, flex-start, row);
-        flex-wrap: wrap;
-        word-break: keep-all;
-      }
-    }
-    .description2 {
-      @media (min-width: $breakpoint-tablet) {
-        display: none;
-      }
-    }
-  }
-  span {
-    margin: 0px 25px;
-    font-size: 1.3rem;
   }
 }
+
+.uvalues {
+  @include simple-flex();
+  text-align: center;
+  background-color: $background-secondary;
+  @media (min-width: $breakpoint-tablet) {
+    display: none;
+  }
+}
+span {
+  margin: 0px 25px;
+  font-size: 1.3rem;
+}
+.photo {
+  @include simple-flex();
+}
 .user-img {
+  display: flex;
+  align-self: flex-start;
   width: 64px;
   height: 64px;
   border-radius: 50%;
@@ -126,11 +100,6 @@ header {
   background: linear-gradient(215deg, blue 10%, #fd1d1d, #fcb045);
   position: relative;
   margin-bottom: 5px;
-  @media (min-width: $breakpoint-tablet) {
-    margin: 70px 70px;
-    width: 70px;
-    height: 70px;
-  }
 
   .spin {
     width: 64px;

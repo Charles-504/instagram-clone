@@ -115,74 +115,47 @@ header .menu {
   background-color: #f2f2f2;
   padding-top: 50px;
 }
-@media (min-width: 768px) {
-  .user-container {
-    background-color: #f2f2f2;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-.user-container .user-pc {
+.user-container .val2 {
   display: flex;
-  justify-content: center;
-  align-items: baseline;
-  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
 }
 @media (max-width: 768px) {
-  .user-container .user-pc {
+  .user-container .val2 {
     display: none;
   }
 }
-.user-container .user2 {
-  font-size: 2.5rem;
-}
-@media (max-width: 768px) {
-  .user-container .user2 {
-    background-color: #f2f2f2;
-    display: none;
-  }
-}
-@media (max-width: 768px) {
-  .user-container .user2 .button2 {
-    width: 70px;
-    height: 18px;
-    background-color: #ffff;
-    border: 1px solid #3c3c43;
-    border-radius: 5px;
-    color: #000;
-    font-size: 1.3rem;
-    outline: none;
-  }
-}
-.user-container .user2 .uvalues {
+
+.uvalues {
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
   text-align: center;
   background-color: #f2f2f2;
 }
-@media (max-width: 768px) {
-  .user-container .user2 .uvalues {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
-    word-break: keep-all;
-  }
-}
 @media (min-width: 768px) {
-  .user-container .user2 .description2 {
+  .uvalues {
     display: none;
   }
 }
-.user-container span {
+
+span {
   margin: 0px 25px;
   font-size: 1.3rem;
 }
 
+.photo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
 .user-img {
+  display: flex;
+  align-self: flex-start;
   width: 64px;
   height: 64px;
   border-radius: 50%;
@@ -192,13 +165,6 @@ header .menu {
   background: linear-gradient(215deg, blue 10%, #fd1d1d, #fcb045);
   position: relative;
   margin-bottom: 5px;
-}
-@media (min-width: 768px) {
-  .user-img {
-    margin: 70px 70px;
-    width: 70px;
-    height: 70px;
-  }
 }
 .user-img .spin {
   width: 64px;
