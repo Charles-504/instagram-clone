@@ -186,6 +186,9 @@ main {
   }
 
   .aside-container {
+    @media (max-width: $breakpoint-tablet) {
+      display: none;
+    }
     @include simple-flex(flex-start, flex-start, column);
     min-width: 300px;
 

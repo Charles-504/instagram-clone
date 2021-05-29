@@ -65,12 +65,21 @@ header {
   text-align: center;
   background-color: $background-secondary;
   padding-top: 50px;
-  .val2 {
-    @include simple-flex();
-    @media (max-width: $breakpoint-tablet) {
-      display: none;
-    }
+}
+.allinf {
+  @include simple-flex(flex-start, flex-start, column);
+  @media (max-width: $breakpoint-tablet) {
+    display: none;
   }
+}
+.val2 {
+  @include simple-flex(flex-start, flex-start);
+  @media (max-width: $breakpoint-tablet) {
+    display: none;
+  }
+}
+.aboutm {
+  padding: 10%;
 }
 
 .uvalues {

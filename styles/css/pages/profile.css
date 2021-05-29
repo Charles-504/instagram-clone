@@ -115,16 +115,33 @@ header .menu {
   background-color: #f2f2f2;
   padding-top: 50px;
 }
-.user-container .val2 {
+
+.allinf {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .allinf {
+    display: none;
+  }
+}
+
+.val2 {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
 }
 @media (max-width: 768px) {
-  .user-container .val2 {
+  .val2 {
     display: none;
   }
+}
+
+.aboutm {
+  padding: 10%;
 }
 
 .uvalues {

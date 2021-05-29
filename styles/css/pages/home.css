@@ -219,6 +219,11 @@ main .aside-container {
   flex-direction: column;
   min-width: 300px;
 }
+@media (max-width: 768px) {
+  main .aside-container {
+    display: none;
+  }
+}
 main .aside-container .user-infos {
   display: flex;
   justify-content: flex-start;
